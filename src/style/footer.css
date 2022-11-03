@@ -1,0 +1,39 @@
+.footer {
+  margin-top: 45px;
+  height: 248px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer div {
+  display: flex;
+  flex-direction: column;
+  
+}
+.footer a {
+  text-decoration: none;
+  color: #000;
+}
+.footer__container {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__container p {
+  margin-top: 20px;
+  opacity: .7;
+}
+.footer__logo {
+  width: 200px;
+  height: 40px;
+  background: url('../img/logo.png')center/contain no-repeat;
+}
+.footer .footer__phone {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #089ad5;
+}
+.footer h4 {
+  align-self: end;
+}

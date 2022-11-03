@@ -1,0 +1,63 @@
+.certificates {
+  margin-top: 100px;
+}
+.certificates__header {
+  display: flex;
+  justify-content: space-between;
+}
+.certificates__header h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.certificates__btn {
+  display: flex;
+}
+.arrowSlider{
+  width: 14px;
+  height: 14px;
+  background: url('../img/arrow.png')center/contain no-repeat;
+}
+.btnLeft {
+  transform: rotate(90deg);
+}
+.btnRight {
+  transform: rotate(270deg);
+}
+.sliderBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 25px;
+  width: 58px;
+  height: 58px;
+  border: 1px solid #D5D5D5;
+}
+.sliderBtn:hover {
+  box-shadow: 0 0 10px #0990cf;
+  transition: .2s;
+}
+.cetificates__container {
+  display: flex;
+  margin-top: 48px;
+}
+.certificate__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 257px;
+  height: 357px;
+  margin-right: 31px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+.certificate__item:hover {
+  box-shadow: 0px 4px 30px #0990cf;
+  transition: .3s;
+}
+.certificate__item:last-child {
+  margin-right: 0;
+}
+.certificate__item img{
+  width: 217px;
+  height: 302px;
+}

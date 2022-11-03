@@ -18,12 +18,46 @@
   background: #043C77;
   color: #fff;
   margin-right: 31px;
+  padding: 30px;
+}
+.click {
+  background: url('../img/click.svg')center/contain no-repeat;
+}
+.phoneBig {
+  background: url('../img/phoneBig.svg')center/contain no-repeat;
+}
+.gas {
+  background: url('../img/gas.svg')center/contain no-repeat;
+}
+.working__card:last-child {
+  margin-right: 0;
 }
 .header_card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 .working__logo_card {
+  width: 64px;
+  height: 64px;
 }
 .working__time__card {
 }
-.info__card {
+.info__card h3{
+  font-size: 21px;
+  white-space: pre-line;
+}
+.info__card p {
+  font-size: 16px;
+  margin-top: 30px;
+}
+.info__card .p2 {
+  font-size: 12px;
+  margin-top: 20px;
+}
+.arrowWorking {
+  margin-top: 17px;
+  width: 59px;
+  height: 14px;
+  background: url('../img/arrowWorking.svg')center/contain no-repeat;
 }

@@ -2,7 +2,14 @@
 @import './navbar.css';
 @import './fastDelivery.css';
 @import './fuelDelivery.css';
+@import './fuelCoast.css';
 @import './working.css';
+@import './benefits.css';
+@import './certificate.css';
+@import './partners.css';
+@import './comments.css';
+@import './questions.css';
+@import './footer.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 * {
@@ -77,4 +84,8 @@ label {
 
 .inp {
   margin-top: 30px;
+}
+a:hover {
+  color: #0979ad;
+  transition: .2s;
 }

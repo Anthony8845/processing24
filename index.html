@@ -74,7 +74,95 @@
   
     <div class="fuelCoast">
       <h2 class="fuelCoast__header">Стоимость топлива</h2>
-  
+      <table class="iksweb">
+        <tbody>
+          <tr id="header" class="table__header">
+            <td>Сорт топлива</td>
+            <td>Экологический класс</td>
+            <td>Производитель</td>
+            <td>Наличный расчет</td>
+            <td>Безналичный расчет</td>
+          </tr>
+          <tr>
+            <td class="space" colspan="5"></td>
+          </tr>
+          <tr>
+            <td class="bgc" rowspan="5">ДТ</td>
+            <td rowspan="3">ЕВРО-5</td>
+            <td>Газпром</td>
+            <td>44.12 р.</td>
+            <td>43.11 р.</td>
+          </tr>
+          <tr>
+            <td>Лукойл</td>
+            <td>43.16 р.</td>
+            <td>42.12 р.</td>
+          </tr>
+          <tr>
+            <td>Роснефть</td>
+            <td>42.22 р.</td>
+            <td>41.12 р.</td>
+          </tr>
+          <tr>
+            <td rowspan="2">ЕВРО-4</td>
+            <td>Газпром</td>
+            <td>40.12 р.</td>
+            <td>40.00 р.</td>
+          </tr>
+          <tr>
+            <td>Лукойл</td>
+            <td>41.20 р.</td>
+            <td>40.18 р.</td>
+          </tr>
+          <tr>
+            <td class="space" colspan="5"></td>
+          </tr>
+          <tr>
+            <td class="bgc" rowspan="8">АИ-95</td>
+            <td rowspan="3">ЕВРО-5</td>
+            <td>Газпром</td>
+            <td>44.12 р.</td>
+            <td>42.12 р.</td>
+          </tr>
+          <tr>
+            <td>Роснефть</td>
+            <td>43.16 р.</td>
+            <td>40.18 р.</td>
+          </tr>
+          <tr>
+            <td>Лукойл</td>
+            <td>44.12 р.</td>
+            <td>40.00 р.</td>
+          </tr>
+          <tr>
+            <td rowspan="2">ЕВРО-4</td>
+            <td>Газпром</td>
+            <td>41.20 р.</td>
+            <td>40.18 р.</td>
+          </tr>
+          <tr>
+            <td>Роснефть</td>
+            <td>44.12 р.</td>
+            <td>44.12 р.</td>
+          </tr>
+          <tr>
+            <td rowspan="3">ЕВРО-3</td>
+            <td>Лукойл</td>
+            <td>44.12 р.</td>
+            <td>42.12 р.</td>
+          </tr>
+          <tr>
+            <td>Роснефть</td>
+            <td>43.16 р.</td>
+            <td>44.12 р.</td>
+          </tr>
+          <tr>
+            <td>Газпром</td>
+            <td>41.20 р.</td>
+            <td>40.00 р.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   
     <div class="fuelDelivery">
@@ -155,10 +243,10 @@
       <div class="working__container">
         <div class="working__card">
           <div class="header_card">
-            <div class="working__logo_card"></div>
+            <div class="working__logo_card click"></div>
             <div class="working__time__card">
               <span>1-3мин</span>
-              <img src="" alt="">
+              <div class="arrowWorking"></div>
             </div>
           </div>
           <div class="info__card">
@@ -172,10 +260,10 @@
         </div>
         <div class="working__card">
           <div class="header_card">
-            <div class="working__logo_card"></div>
+            <div class="working__logo_card phoneBig"></div>
             <div class="working__time__card">
               <span>1-3мин</span>
-              <img src="" alt="">
+              <div class="arrowWorking"></div>
             </div>
           </div>
           <div class="info__card">
@@ -189,7 +277,7 @@
         </div>
         <div class="working__card">
           <div class="header_card">
-            <div class="working__logo_card"></div>
+            <div class="working__logo_card gas"></div>
             <div class="working__time__card">
               <span>30-90мин</span>
             </div>
@@ -198,12 +286,12 @@
             <h3>Заправка вашего
               автомобиля
             </h3>
-            <p>
+            <p class="p1">
               В назначенное время приедет 
               заправщик и заправит 
               автомобиль топливом.
             </p>
-            <p>Если у заказчика есть действующий договор 
+            <p class="p2">Если у заказчика есть действующий договор 
               на топливные карты, то при оплате можно 
               провести транзакцию через терминал. 
               Переносное устройство есть у каждого 
@@ -215,72 +303,74 @@
     </div>
   
     <div class="benefits">
-      <h2 class="benefits__header">Преимущества сервиса</h2>
-      <div class="benefits__info">
-        <div class="benefits__info_card">
-          <img src="" alt="" class="benefits__info_card_logo">
-          <div class="card__description">
-            <h3>Качество топлива</h3>
-            <p>Aliquam rhoncus et massa 
-              adipiscing risus leo nec lacus, 
-              sagittis. Eu, purus ac nisi sit eget 
-              sed et, adipiscing felis.
-            </p>
+      <div class="benefits__container">
+        <h2 class="benefits__header">Преимущества сервиса</h2>
+        <div class="benefits__info">
+          <div class="benefits__info_card">
+            <img src="./src/img/certificate.png" width="48px" height="48px" alt="sertificate icon" class="benefits__info_card_logo">
+            <div class="card__description">
+              <h3>Качество топлива</h3>
+              <p>Aliquam rhoncus et massa 
+                adipiscing risus leo nec lacus, 
+                sagittis. Eu, purus ac nisi sit eget 
+                sed et, adipiscing felis.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="benefits__info_card">
-          <img src="" alt="" class="benefits__info_card_logo">
-          <div class="card__description">
-            <h3>Бережем ваше время и нервы</h3>
-            <p>Aliquam rhoncus et massa 
-              adipiscing risus leo nec lacus, 
-              sagittis. Eu, purus ac nisi sit eget 
-              sed et, adipiscing felis.
-            </p>
+          <div class="benefits__info_card">
+            <img src="./src/img/clock.png" width="48px" height="48px" alt="clock icon" class="benefits__info_card_logo">
+            <div class="card__description">
+              <h3>Бережем ваше время и нервы</h3>
+              <p>Aliquam rhoncus et massa 
+                adipiscing risus leo nec lacus, 
+                sagittis. Eu, purus ac nisi sit eget 
+                sed et, adipiscing felis.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="benefits__info_card">
-          <img src="" alt="" class="benefits__info_card_logo">
-          <div class="card__description">
-            <h3>Цена</h3>
-            <p>Aliquam rhoncus et massa 
-              adipiscing risus leo nec lacus, 
-              sagittis. Eu, purus ac nisi sit eget 
-              sed et, adipiscing felis.
-            </p>
+          <div class="benefits__info_card">
+            <img src="./src/img/ruble.png" width="48px" height="48px" alt="ruble icon" class="benefits__info_card_logo">
+            <div class="card__description">
+              <h3>Цена</h3>
+              <p>Aliquam rhoncus et massa 
+                adipiscing risus leo nec lacus, 
+                sagittis. Eu, purus ac nisi sit eget 
+                sed et, adipiscing felis.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="benefits__info_card">
-          <img src="" alt="" class="benefits__info_card_logo">
-          <div class="card__description">
-            <h3>Ваш комфорт—наша забота</h3>
-            <p>Aliquam rhoncus et massa 
-              adipiscing risus leo nec lacus, 
-              sagittis. Eu, purus ac nisi sit eget 
-              sed et, adipiscing felis.
-            </p>
+          <div class="benefits__info_card">
+            <img src="./src/img/place.png" width="48px" height="48px" alt="place icon" class="benefits__info_card_logo">
+            <div class="card__description">
+              <h3>Ваш комфорт—наша забота</h3>
+              <p>Aliquam rhoncus et massa 
+                adipiscing risus leo nec lacus, 
+                sagittis. Eu, purus ac nisi sit eget 
+                sed et, adipiscing felis.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="benefits__info_card">
-          <img src="" alt="" class="benefits__info_card_logo">
-          <div class="card__description">
-            <h3>Безопасность процесса</h3>
-            <p>Aliquam rhoncus et massa 
-              adipiscing risus leo nec lacus, 
-              sagittis. Eu, purus ac nisi sit eget 
-              sed et, adipiscing felis.
-            </p>
+          <div class="benefits__info_card">
+            <img src="./src/img/shield.png" width="48px" height="48px" alt="shild icon" class="benefits__info_card_logo">
+            <div class="card__description">
+              <h3>Безопасность процесса</h3>
+              <p>Aliquam rhoncus et massa 
+                adipiscing risus leo nec lacus, 
+                sagittis. Eu, purus ac nisi sit eget 
+                sed et, adipiscing felis.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="benefits__info_card">
-          <img src="" alt="" class="benefits__info_card_logo">
-          <div class="card__description">
-            <h3>Несколько ТС в одном месте?</h3>
-            <p>Aliquam rhoncus et massa 
-              adipiscing risus leo nec lacus, 
-              sagittis. Eu, purus ac nisi sit eget 
-              sed et, adipiscing felis.
-            </p>
+          <div class="benefits__info_card">
+            <img src="./src/img/way.png" width="48px" height="48px" alt="way icon" class="benefits__info_card_logo">
+            <div class="card__description">
+              <h3>Несколько ТС в одном месте?</h3>
+              <p>Aliquam rhoncus et massa 
+                adipiscing risus leo nec lacus, 
+                sagittis. Eu, purus ac nisi sit eget 
+                sed et, adipiscing felis.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -290,133 +380,114 @@
       <div class="certificates__header">
         <h2>Сертификаты качества топлива</h2>
         <div class="certificates__btn">
-          <div></div>
-          <div></div>
+          <div class="btnLeft sliderBtn">
+            <div class="arrowSlider"></div>
+          </div>
+          <div class="btnRight sliderBtn">
+            <div class="arrowSlider"></div>
+          </div>
         </div>
       </div>
       <div class="cetificates__container">
         <div class="certificate__item">
-          <img src="" alt="">
+          <img src="./src/img/sertificate/image1.png" alt="">
         </div>
         <div class="certificate__item">
-          <img src="" alt="">
+          <img src="./src/img/sertificate/image2.png" alt="">
         </div>
         <div class="certificate__item">
-          <img src="" alt="">
+          <img src="./src/img/sertificate/image3.png" alt="">
         </div>
         <div class="certificate__item">
-          <img src="" alt="">
+          <img src="./src/img/sertificate/image4.png" alt="">
         </div>
       </div>
     </div>
   
     <div class="partners">
       <div class="partners__container">
-        <div class="partners__block1">
-          <img class="partners__item"></img>  
-          <img class="partners__item"></img>  
-          <img class="partners__item"></img>  
-          <img class="partners__item"></img>  
-        </div>  
-        <div class="partners__block2">
-          <img class="partners__item"></img>  
-          <img class="partners__item"></img>  
-          <img class="partners__item"></img>  
-          <img class="partners__item"></img> 
-        </div>  
-        <div class="partners__block3">
-          <img class="partners__item"></img>  
-          <img class="partners__item"></img>  
-          <img class="partners__item"></img>  
-          <img class="partners__item"></img> 
+        <h2>Наши партнеры</h2>
+        <div class="partners__block">
+          <img src="./src/img/partners/lukoil.png" alt="lukoil logo partner" class="partners__item"></img>  
+          <img src="./src/img/partners/gazprom.png" alt="gazprom logo partner" class="partners__item"></img>  
+          <img src="./src/img/partners/rosneft.png" alt="rosneft logo partner" class="partners__item"></img>  
+          <img src="./src/img/partners/tatneft.png" alt="tatneft logo partner" class="partners__item"></img>  
+        </div>
+        <hr>
+        <div class="slider"> 
+          <div></div>
+          <div></div>
+          <div></div>
         </div>  
       </div>
     </div>
   
     <div class="comments">
-      <div class="comments__header">
-        <h2>Отзывы</h2>
-        <div class="comments__btns">
-          <div></div>
-          <div></div>
+      <div class="comments__block">
+        <div class="comments__header">
+          <h2>Отзывы</h2>
+          <div class="comments__btns">
+            <div class="btnLeft sliderBtn">
+              <div class="arrowSlider"></div>
+            </div>
+            <div class="btnRight sliderBtn">
+              <div class="arrowSlider"></div>
+            </div>
+          </div>
         </div>
+        <div class="comments__container">
+          <div class="comments__item">
+            <div class="comment_head">
+              <h4>Гусев Вячеслав</h4>
+              <p>Индивидуальный предприниматель</p>
+            </div>
+            <p class="comment_text">
+              Velit, lectus sit urna tincidunt augue. Cursus vulputate 
+              pellentesque faucibus euismod. Diam pharetra, non, ut 
+              integer dui feugiat porttitor at. Non, dignissim enim 
+              viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, 
+              justo, feugiat.
+            </p>
+            <a href="#">Подробнее</a>
+          </div>
+          <div class="comments__item">
+            <div class="comment_head">
+              <h4>Зеленов Евгений</h4>
+              <p>Гененеральный директор трансопртной компании</p>
+            </div>
+            <p class="comment_text">
+              Mi auctor sit habitasse sed mi cras ullamcorper massa 
+              sed. In augue fames sodales pretium, at scelerisque. 
+              Pulvinar a mattis pharetra mi, aliquet sem tristique lorem 
+              eleifend. Nisl, scelerisque ut libero, pellentesque. 
+              Tincidunt vestibulum volutpat lacus imperdiet morbi 
+              vulputate tristique facilisi.
+            </p>
+            <a href="#">Подробнее</a>
+          </div>
+        </div>
+        <div class="comments__button btn">Читать все отзывы</div>
       </div>
-      <div class="comments__container">
-        <div class="comments__item">
-          <div class="comment_head">
-            <h4>Гусев Вячеслав</h4>
-            <p>Индивидуальный предприниматель</p>
-          </div>
-          <p class="comment_text">
-            Velit, lectus sit urna tincidunt augue. Cursus vulputate 
-            pellentesque faucibus euismod. Diam pharetra, non, ut 
-            integer dui feugiat porttitor at. Non, dignissim enim 
-            viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, 
-            justo, feugiat.
-          </p>
-          <a href="#">Подробнее</a>
-        </div>
-        <div class="comments__item">
-          <div class="comment_head">
-            <h4>Зеленов Евгений</h4>
-            <p>Гененеральный директор трансопртной компании</p>
-          </div>
-          <p class="comment_text">
-            Mi auctor sit habitasse sed mi cras ullamcorper massa 
-            sed. In augue fames sodales pretium, at scelerisque. 
-            Pulvinar a mattis pharetra mi, aliquet sem tristique lorem 
-            eleifend. Nisl, scelerisque ut libero, pellentesque. 
-            Tincidunt vestibulum volutpat lacus imperdiet morbi 
-            vulputate tristique facilisi.
-          </p>
-          <a href="#">Подробнее</a>
-        </div>
-        <div class="comments__item">
-          <div class="comment_head">
-            <h4>Вязов Сергей</h4>
-            <p>Велкопоповецкий Козел</p>
-          </div>
-          <p class="comment_text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Pariatur, nulla soluta. Reprehenderit facilis quod cupiditate 
-            aliquam est qui, aut voluptates error at, dignissimos, 
-            inventore eaque nobis accusamus ducimus tempora expedita!
-          </p>
-          <a href="#">Подробнее</a>
-        </div>
-        <div class="comments__item">
-          <div class="comment_head">
-            <h4>Краснова Ирина</h4>
-            <p>Просто прохожий</p>
-          </div>
-          <p class="comment_text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quidem rerum, rem iste, impedit odit culpa nam quod dignissimos 
-            laborum temporibus, excepturi a ex earum recusandae! 
-            At delectus vitae necessitatibus vero?
-          </p>
-          <a href="#">Подробнее</a>
-        </div>
-      </div>
-      <div class="comments__button btn">Читать все отзывы</div>
     </div>
   
-    <div class="question">
-      <h2>Остались вопросы?</h2>
-      <p>
+    <div class="questions">
+      <div class="questions__container">
+        <h2>Остались вопросы?</h2>
+        <p>
         Готовы ответить на любой Ваш вопрос. Оставьте свой номер телефона и мы 
         свяжемся с вами в ближайшее время 
-      </p>
-      <form class="question__form" action="">
-        <div>
+        </p>
+        <form class="questions__form" action="">
+         <div>
           <input class="input" placeholder="Ваше имя" type="text">
           <input class="input" placeholder="Номер телефона" type="tel">
           <input class="submit__btn btn" type="submit" value="Перезвоните мне">
         </div>
-        <p>
+          <p>
           Нажимая на кнопку "Перезвоните мне" я соглашаюсь с <a href="#">политикой конфиденциальности</a>
-        </p>
-      </form>
+          </p>
+        </form>
+      </div>
     </div>
   
     <div class="footer">
@@ -440,10 +511,12 @@
       </div>
       <div>
         <h4>Отдел продаж</h4>
-        <a href="tel:84951278170">8 (495) 127-81-70</a>
+        <a class="footer__phone" href="tel:84951278170">8 (495) 127-81-70</a>
       </div>
     </div>
   </div>
+
+  
 </body>
 
 </html>
