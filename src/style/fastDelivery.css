@@ -18,15 +18,8 @@
 .header__form span {
   color: #098FCF;
 }
-.form__container {
-
-}
-.input__name {
-
-}
-
-.input__phone {
-
+#checked {
+  margin-right: 5px;
 }
 .fastDelivery__check {
   margin-top: 30px;
