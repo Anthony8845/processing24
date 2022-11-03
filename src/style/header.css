@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+
+}
+.header__phone {
+  display: flex;
+  align-items: center;
+  
+}
+
+.header__container {
+  display: flex;
+  
+}
+
+.phone__logo {
+  width: 16px;
+  height: 16px;
+  background: url('../img/phone.png')center/ contain no-repeat;
+}
+.phone__num {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 35px 0 13px;
+}
+.header__buttons {
+  display: flex;
+  align-items: center;
+}
+.write {
+
+}
+
+.lk__logo {
+  width: 13px;
+  height: 15px;
+  background: url('../img/user.svg') center/ contain no-repeat;
+  margin-right: 13px;
+}
+.lk {
+
+}

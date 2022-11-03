@@ -1,0 +1,136 @@
+.fuelDelivery {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 666px;
+}
+.fuelDelivery_block {
+  padding-top: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 1440px;
+  height: 666px;
+  background: #f9f9f9;
+}
+.fuelDelivery h2{
+  align-self: flex-start;
+  margin-left: 160px;
+  font-size: 36px;
+  margin-bottom: 34px;
+}
+.fuelDelivery__container {
+  display: flex;
+}
+.fuelDelivery__form {
+  margin-right: 71px;
+}
+
+.fuelDelivery__card {
+  width: 638px;
+  height: 441px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+.card__container {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 558px;
+  padding: 40px;
+}
+.card__container h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.card_item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.card_item h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.card__info {
+  margin-top: 10px;
+  white-space: pre-line;
+  color: #565656;
+}
+.card__item_bold {
+  font-size: 18px;
+  font-weight: 600;
+}
+.card__container .btn {
+  margin-top: 31px;
+  width: 258px;
+}
+select {
+  padding-top: 13px;
+}
+.fuelDelivery__form .input {
+  width: 409px;
+}
+
+.fuelDelivery__form .inp {
+  margin:0 0 16px 0;
+}
+.volum__container {
+  height: 55px;
+  position: relative;
+}
+.volum__container p {
+  position: absolute;
+  top: 0;
+  background: #fff;
+}
+.inputRange {
+  position: absolute;
+  top: 43px;
+}
+
+.volum__container input[type = 'range'] {
+  padding: 0;
+  width: 410px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 2px;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  height: 2px;
+  background-color: #098FCF;
+}
+input[type=range]::-webkit-slider-thumb {
+  background: #098FCF;
+  cursor: pointer;
+  width:15px;
+  height: 15px;
+  border-radius: 15px/100%;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+input[type=range]::-moz-range-track {
+  height: 2px;
+  background-color: #098FCF;
+  border-radius: 15px/100%;
+}
+input[type=range]::-moz-range-thumb {
+  background: #098FCF;
+  border-radius: 15px/100%;
+  cursor: pointer;
+}
+#rangeValue {
+  padding-top: 12px;
+}
+
+hr {
+  margin: 16px 0;
+  height: 1px;
+  border: none;
+  background-color: #E7E7E7;
+}

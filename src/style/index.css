@@ -1,0 +1,80 @@
+@import './header.css';
+@import './navbar.css';
+@import './fastDelivery.css';
+@import './fuelDelivery.css';
+@import './working.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  width: 1440px;
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+.container {
+  padding-top: 16px;
+  width: 1120px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: none;
+  width: 176px;
+  height: 46px;
+  background-color: #098FCF;
+}
+.btn:hover {
+  background-color: #0979ad;
+  transition: .3s;
+}
+
+label {
+  font-weight: 500;
+}
+
+.arrow {
+  margin: 0 5px 0 9px;
+  width: 9px;
+  height: 5px;
+  background: url('../img/arrow.png') center/ contain no-repeat;
+}
+.arrow:hover {
+  transform: rotate(180deg);
+  transition: .3s;
+}
+
+.input {
+  margin: 8px 14px 0 0;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  width: 273px;
+  height: 46px;
+  border: 1px solid #D5D5D5;
+}
+
+.input::placeholder {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form__container {
+  display: flex;
+  align-items: end;
+}
+
+.inp {
+  margin-top: 30px;
+}

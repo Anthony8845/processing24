@@ -1,0 +1,29 @@
+.working {
+  margin-top: 100px;
+}
+
+.working h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.working__container {
+  display: flex;
+  margin-top: 48px;
+  width: 1120px;
+  height: 394px;
+}
+.working__card {
+  width: 353px;
+  height: 394px;
+  background: #043C77;
+  color: #fff;
+  margin-right: 31px;
+}
+.header_card {
+}
+.working__logo_card {
+}
+.working__time__card {
+}
+.info__card {
+}
